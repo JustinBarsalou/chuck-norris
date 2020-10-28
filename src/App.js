@@ -33,7 +33,6 @@ class App extends React.Component {
     
   }
 
-
   render() {
     const { chuck } = this.state;
     return (
