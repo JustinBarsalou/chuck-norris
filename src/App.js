@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import './App.css';
 
+//need to add a state value to increase clicks 
 class App extends React.Component {
   state = {
     chuck: '',
@@ -40,11 +41,6 @@ class App extends React.Component {
         <div className="joke-card">
           <h1 className="joke-itself">{chuck}</h1>
           <button className="button" onClick={this.fetchChuck}>Chuck it up</button>
-          {/* <SimpleCard chuck={chuck}>
-
-          </SimpleCard> */}
-
-
         </div>
       </div>
     );
