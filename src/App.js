@@ -11,7 +11,15 @@ class App extends React.Component {
     console.log("Mounted up")
     this.fetchChuck();
   }
-
+  
+  // fetchAdd() {
+  //   this.handleClick();
+  //   this.fetchChuck();
+  // }
+  // handleClick() {
+  //   console.log('Click happened');
+  // }
+  
   fetchChuck = () => {
     axios.get(`https://api.chucknorris.io/jokes/random`)
     .then(response => {
@@ -21,7 +29,7 @@ class App extends React.Component {
     .catch ((error) => {
       console.log(error)
     })
-
+    
   }
 
 
@@ -30,9 +38,11 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="joke-card">
-
-          <h1 className="heading"> Joke: </h1>
           <h1 className="joke-itself">{chuck}</h1>
+          <button className="button" onClick={this.fetchChuck}>Chuck it up</button>
+          {/* <SimpleCard chuck={chuck}>
+
+          </SimpleCard> */}
 
 
         </div>

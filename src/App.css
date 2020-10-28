@@ -4,30 +4,6 @@
   height: 100%; 
   box-sizing: border-box;
 }
-
-.App {
-  height: 100%;
-  text-align: center;
-  background-image: url(./chuckypoo.jpg);
-  background-size: cover;
-  background-position: center;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  opacity: .67;
-
-}
-
-.joke-card {
-  padding: 1%;
-  background-color: rgb(153,153,153);
-  height: 30%;
-  width: 40%;
-}
-
-
-
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -38,5 +14,49 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+
+.App {
+  height: 100%;
+  text-align: center;
+  background-image: url(./chuckypoo.jpg);
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.joke-card {
+  /* padding: 1%;
+  height: 25%;
+  width: 40%; */
+  background: whitesmoke;
+  width: 40%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 25px;
+  padding: 2%;
+  box-shadow: 10px 10px;
+}
+
+.joke-itself {
+  display: flex;
+  align-items: center;
+  height: 60%;
+  padding: inherit;
+  font-size: inherit;
+}
+
+.button {
+  font-size: small;
+  margin: 1%;
+}
+
+
+
+
 
 
